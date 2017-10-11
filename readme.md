@@ -51,8 +51,7 @@ Things to Think About
 * $ npm start
 
 ### Use
-* Click the sign up link in the upper right hand corner
-* Add a name/email/password to create an account
-* Once you have created an account you are able to favorite a movie
-* Click on the favorites link to view favorite movies
-* Click unfavorite to remove
+* Type in a folder name and click "Create" button to create a new folder
+* Click on the folder name in the folders list to open
+* Add a name and url into the "Add New Link" section and click the "Crushify!!!" button to create a shortened link
+* Crushed links are listed below the new link form
