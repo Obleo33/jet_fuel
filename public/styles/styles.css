@@ -1,231 +1,308 @@
 /* #0C120C #A30000 #6D7275 #F0A202 #1BE7FF #FFFFFF */
 
-body {
-  height      : 100vh;
-  font-family : 'Biryani',
-                sans-serif;
+body
+{
+    font-family: 'Biryani',
+    sans-serif;
+
+    height: 100vh;
 }
 
-header {
-  display        : flex;
-  height: 100px;
-  justify-content: center;
+header
+{
+    display: flex;
+
+    height: 100px;
+
+    justify-content: center;
 }
 
-.title-box {
-  display          : flex;
-  min-width        : 100px;
-  align-items      : center;
-  justify-content  : center;
-  flex-direction: column;
-}
-
-.title-box:before{
-  content: "";
-  position: absolute;
-  height: 100px;
-  width: 100%;
-  z-index: -1;
-  background-image: url('../assets/flames.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  opacity: .3;
-}
-
-.title {
-  font-size   : 40px;
-  font-weight : 900;
-}
-
-.tag {
-  font-weight: 100;
-}
-
-.title span {
-  font-weight : 200;
-}
-
-.header-form {
-  margin-top: 20px;
-  display          : flex;
-  align-items: center;
-  justify-content  : center;
-}
-
-#submit-button {
-  width            : 100px;
-  height           : 34px;
-  border           : 1px solid #0C120C;
-  background-color : #FFFFFF;
-}
-
-.message-section {
-  display          : flex;
-  height           : 40px;
-  background-color : #FFFFFF;
-  align-items      : center;
-  justify-content  : center;
-  color: red;
-}
-
-#folder-input {
-  width         : 225px;
-  height        : 30px;
-  border        : 1px solid #0C120C;
-  text-align: center;
-}
-
-.folder-container {
-  display        : flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.folder-list-container {
-  display          : flex;
-  min-width        : 200px;
-  padding-top      : 15px;
-  align-items      : center;
-  flex-direction   : column;
-}
-
-.folder-list {
-  display: flex;
-  flex-direction: row;
-  min-width : 150px;
-  flex-wrap: wrap;
-  justify-content: center;
-  max-width: 80%;
-}
-
-.list-folder {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height      : 25px;
-  width: 50px;
-  margin      : 5px;
-  border      : 1px solid black;
-}
-
-.list-folder:hover {
-  cursor : pointer;
-  color: red;
-  min-width: 50px;
-  width: auto;
-}
-
-.folder {
-  padding: 1px;
-  margin         : 5px;
-  text-transform : uppercase;
-  font-size      : 13px;
-  font-weight    : 300;
-  z-index: -1;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis; 
-}
-
-.folder-detail {
-  width: 90%;
-  display          : flex;
-  padding-top      : 15px;
-  align-items      : center;
-  flex-direction   : column;
-}
-
-.new-link-title {
-  margin : 10px 0;
-}
-
-.url-form {
-  display: flex;
-}
-
-#url-name {
-  width  : 200px;
-  height : 27px;
-  margin : 5px 5px 5px 0;
-  border : 1px solid #0C120C;
-}
-
-#url {
-  width  : 200px;
-  height : 27px;
-  margin : 5px 5px 5px 0;
-  border : 1px solid #0C120C;
-}
-
-#crushify-button {
-  width            : 100px;
-  height           : 31px;
-  margin : 5px 5px 5px 0;
-  padding-bottom   : 1px;
-  border           : 1px solid #0C120C;
-  background-color : #FFFFFF;
-}
-
-.detail-name {
-  margin-bottom : 10px;
-  font-size     : 30px;
-  font-weight   : 700;
-  text-align: center;
-}
-
-.link-detail-title {
-  margin-top : 10px;
-}
-
-.link-card {
-  display        : flex;
-  margin         : 10px 0;
-  border         : 1px solid #0C120C;
-  flex-direction : column;
-}
-
-.link-card header {
-  height: 40px;
-  border-bottom: 1px solid black;
-}
-
-.link-name {
-  margin         : 13px 10px;
-  text-transform : uppercase;
-  font-size      : 20px;
-}
-
-.link-card p {
-  margin : 10px 10px;
-}
-
-@media (max-width: 600px) {
-  .folder-creation {
+.title-box
+{
     display: flex;
     flex-direction: column;
-  }
 
-  #submit-button {
-    margin-top: 10px;
-    width: 229px;
-  }
+    min-width: 100px;
 
-  .url-form {
+    align-items: center;
+    justify-content: center;
+}
+
+.title-box:before
+{
+    position: absolute;
+    z-index: -1;
+
+    width: 100%;
+    height: 100px;
+
+    content: '';
+
+    opacity: .3;
+    background-image: url('../assets/flames.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.title
+{
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.tag
+{
+    font-weight: 100;
+}
+
+.title span
+{
+    font-weight: 200;
+}
+
+.header-form
+{
+    display: flex;
+
+    margin-top: 20px;
+
+    align-items: center;
+    justify-content: center;
+}
+
+#submit-button
+{
+    width: 100px;
+    height: 34px;
+
+    border: 1px solid #0c120c;
+    background-color: #fff;
+}
+
+.message-section
+{
+    display: flex;
+
+    height: 40px;
+
+    color: red;
+    background-color: #fff;
+
+    align-items: center;
+    justify-content: center;
+}
+
+#folder-input
+{
+    width: 225px;
+    height: 30px;
+
+    text-align: center;
+
+    border: 1px solid #0c120c;
+}
+
+.folder-container
+{
+    display: flex;
     flex-direction: column;
-  }
 
-  #url-name {
-    width: unset;
+    align-items: center;
+}
+
+.folder-list-container
+{
+    display: flex;
+    flex-direction: column;
+
+    min-width: 200px;
+    padding-top: 15px;
+
+    align-items: center;
+}
+
+.folder-list
+{
+    display: flex;
+    flex-direction: row;
+
+    min-width: 150px;
+    max-width: 80%;
+
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.list-folder
+{
+    display: flex;
+
+    width: 75px;
+    height: 25px;
+    margin: 5px;
+
+    border: 1px solid black;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.list-folder:hover
+{
+    cursor: pointer;
+
+    color: red;
+}
+
+.folder
+{
+    font-size: 13px;
+    font-weight: 300;
+
+    z-index: -1;
+
+    overflow: hidden;
+
+    margin: 5px;
+    padding: 1px;
+
+    white-space: nowrap;
+    text-transform: uppercase;
+    text-overflow: ellipsis;
+}
+
+.folder-detail
+{
+    display: flex;
+    flex-direction: column;
+
+    width: 90%;
+    padding-top: 15px;
+
+    align-items: center;
+}
+
+.new-link-title
+{
+    margin: 10px 0;
+}
+
+.url-form
+{
+    display: flex;
+}
+
+#url-name
+{
+    width: 200px;
+    height: 27px;
+    margin: 5px 5px 5px 0;
+
+    border: 1px solid #0c120c;
+}
+
+#url
+{
+    width: 200px;
+    height: 27px;
+    margin: 5px 5px 5px 0;
+
+    border: 1px solid #0c120c;
+}
+
+#crushify-button
+{
+    width: 100px;
+    height: 31px;
+    margin: 5px 5px 5px 0;
+    padding-bottom: 1px;
+
+    border: 1px solid #0c120c;
+    background-color: #fff;
+}
+
+.detail-name
+{
+    font-size: 30px;
+    font-weight: 700;
+
+    margin-bottom: 10px;
+
     text-align: center;
-  }
+}
 
-  #url {
-    text-align: center;
-    width: unset;
-  }
+.link-detail-title
+{
+    margin-top: 10px;
+}
 
-  #crushify-button {
-    width: unset;
-  }
+.link-card
+{
+    display: flex;
+    flex-direction: column;
+
+    margin: 10px 0;
+
+    border: 1px solid #0c120c;
+}
+
+.link-card header
+{
+    height: 40px;
+
+    border-bottom: 1px solid black;
+}
+
+.link-name
+{
+    font-size: 20px;
+
+    margin: 13px 10px;
+
+    text-transform: uppercase;
+}
+
+.link-card p
+{
+    margin: 10px 10px;
+}
+
+@media (max-width: 600px)
+{
+    .folder-creation
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #submit-button
+    {
+        width: 229px;
+        margin-top: 10px;
+    }
+
+    .url-form
+    {
+        flex-direction: column;
+    }
+
+    #url-name
+    {
+        width: unset;
+
+        text-align: center;
+    }
+
+    #url
+    {
+        width: unset;
+
+        text-align: center;
+    }
+
+    #crushify-button
+    {
+        width: unset;
+    }
 }
