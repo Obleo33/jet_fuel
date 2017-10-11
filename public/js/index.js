@@ -60,7 +60,7 @@ const prependLinks = (link) => {
       <header>
         <h3 class="link-name">${link.name}</h3>
       </header>
-      <p>Short link:<a class="short-link" href='/short/${link.id}'>localhost/3000/short/${link.id}</a></p>
+      <p>Short link:<a class="short-link" href='/short/${link.id}'>https://jetfuel-.herokuapp.com/${link.id}</a></p>
       <p>Visits: ${link.visits}</p>
       <p>Long URL: <a href=${link.url}>${link.url}</a>
       <p>Added on: ${link.created_at}</p>
